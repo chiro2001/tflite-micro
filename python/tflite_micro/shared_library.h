@@ -21,7 +21,8 @@ limitations under the License.
 #ifndef TENSORFLOW_LITE_MICRO_TOOLS_PYTHON_INTERPRETER_SHARED_LIBRARY_H_
 #define TENSORFLOW_LITE_MICRO_TOOLS_PYTHON_INTERPRETER_SHARED_LIBRARY_H_
 
-#include <dlfcn.h>
+
+#include "dlfcn.h"
 
 namespace tflite {
 

@@ -698,25 +698,28 @@ tensorboard-data-server==0.7.2 \
     --hash=sha256:9fe5d24221b29625dbc7328b0436ca7fc1c23de4acf4d272f1180856e32f9f60 \
     --hash=sha256:ef687163c24185ae9754ed5650eb5bc4d84ff257aabdc33f0cc6f74d8ba54530
     # via tensorboard
-tensorflow==2.15.0.post1 \
-    --hash=sha256:8716acd8eb2950db126d74a419ac1ed870558ba34efc7d8e506165ad5896b261 \
-    --hash=sha256:c2dc9b6a519a9caad80430220c17f604e9ae76f3b5007c07cc8a5321e9f9cad0 \
-    --hash=sha256:d4b3926a3759e08a1e818f01104c25e6952da6fb1d7a77c75d9f1d8407f72593
+# tensorflow==2.15.0.post1 \
+#     --hash=sha256:8716acd8eb2950db126d74a419ac1ed870558ba34efc7d8e506165ad5896b261 \
+#     --hash=sha256:c2dc9b6a519a9caad80430220c17f604e9ae76f3b5007c07cc8a5321e9f9cad0 \
+#     --hash=sha256:d4b3926a3759e08a1e818f01104c25e6952da6fb1d7a77c75d9f1d8407f72593
+tensorflow==2.15.0
+tensorflow-intel==2.15.0
     # via -r third_party/python_requirements.in
 tensorflow-estimator==2.15.0 \
     --hash=sha256:aedf21eec7fb2dc91150fc91a1ce12bc44dbb72278a08b58e79ff87c9e28f153
     # via tensorflow
-tensorflow-io-gcs-filesystem==0.35.0 \
-    --hash=sha256:0fce1466bdb91096b6d22e7df17358ba228bcb92db5cff83f2f9f1c68eb26788 \
-    --hash=sha256:1856fe321fdb75f3386d92109c60db6ef097f610b450f9cc69d76444fb9980d1 \
-    --hash=sha256:35b6eca7225c815d962254327195f191d88c3c9c2278a5ab23e0ac834acbadbb \
-    --hash=sha256:5521721b38105496d4b43a4ffb0af5b04cc4873d464f26fbceddf8d63815ce98 \
-    --hash=sha256:6e997389bfe008210cbd97c0c738d64282a2f03ad4d0536013bb0a9efde0c283 \
-    --hash=sha256:ac8f1de60fdf9c734aea967b98555e366ac8743f77bca15c49eff023f587076b \
-    --hash=sha256:b8fb3402fb1457482c386ea19371bc76383412ae9ea4396edb1e8adb4ba76f21 \
-    --hash=sha256:c4f786eebd98d401565374722f2e67f3878675b0d87489cbaa13c70ee6ac370a \
-    --hash=sha256:dd8f30908bf8b7b2a017d6b145720d105aff7f998422671b71729708ec7b2fe4 \
-    --hash=sha256:eb6bf8f5b40207ecb17e7fdc3b4fc824a8361267c14e9528c1688e16de135cb7
+# tensorflow-io-gcs-filesystem==0.35.0 \
+#     --hash=sha256:0fce1466bdb91096b6d22e7df17358ba228bcb92db5cff83f2f9f1c68eb26788 \
+#     --hash=sha256:1856fe321fdb75f3386d92109c60db6ef097f610b450f9cc69d76444fb9980d1 \
+#     --hash=sha256:35b6eca7225c815d962254327195f191d88c3c9c2278a5ab23e0ac834acbadbb \
+#     --hash=sha256:5521721b38105496d4b43a4ffb0af5b04cc4873d464f26fbceddf8d63815ce98 \
+#     --hash=sha256:6e997389bfe008210cbd97c0c738d64282a2f03ad4d0536013bb0a9efde0c283 \
+#     --hash=sha256:ac8f1de60fdf9c734aea967b98555e366ac8743f77bca15c49eff023f587076b \
+#     --hash=sha256:b8fb3402fb1457482c386ea19371bc76383412ae9ea4396edb1e8adb4ba76f21 \
+#     --hash=sha256:c4f786eebd98d401565374722f2e67f3878675b0d87489cbaa13c70ee6ac370a \
+#     --hash=sha256:dd8f30908bf8b7b2a017d6b145720d105aff7f998422671b71729708ec7b2fe4 \
+#     --hash=sha256:eb6bf8f5b40207ecb17e7fdc3b4fc824a8361267c14e9528c1688e16de135cb7
+tensorflow-io-gcs-filesystem==0.31.0
     # via tensorflow
 termcolor==2.4.0 \
     --hash=sha256:9297c0df9c99445c2412e832e882a7884038a25617c60cea2ad69488d4040d63 \

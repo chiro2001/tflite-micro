@@ -45,6 +45,17 @@ cc_library(
     ],
 )
 
+cc_library(
+    name = "dlfcn",
+    srcs = [
+        "dlfcn.c",
+    ],
+    hdrs = [
+        "dlfcn.h",
+    ],
+    deps = [],
+)
+
 pybind_extension(
     name = "_runtime",
     # target = _runtime.so because pybind_extension() appends suffix
@@ -65,6 +76,7 @@ pybind_extension(
         "//tensorflow/lite/micro:op_resolvers",
         "//tensorflow/lite/micro:recording_allocators",
         "@numpy_cc_deps//:cc_headers",
+        ":dlfcn",
     ],
 )
 
@@ -230,7 +242,7 @@ py_wheel(
     ],
     stamp = 1,  # 1 == always stamp
     strip_path_prefixes = [package_name()],
-    summary = "TensorFlow Lite for Microcontrollers",
+    # summary = "TensorFlow Lite for Microcontrollers",
     twine = "@tflm_pip_deps_twine//:pkg",
     version = "{BUILD_EMBED_LABEL}.dev{STABLE_GIT_COMMIT_TIME}",
     deps = [
